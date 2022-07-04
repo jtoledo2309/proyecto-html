@@ -1,0 +1,22 @@
+
+
+.navbar {
+    background-color: darkslategray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-list > li {
+    margin: 20px;
+}
+
+header > img {
+    width: 100%;
+    opacity: 70%;
+}
