@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+    <!-- Bloque para el navbar -->
+
     <nav class="navbar">
         <div clas="navbar-logo">
-            <img src="/multimedia/images/logo-portfolio.png" alt="logo del Portfolio">
+            Hola
         </div>
         <ul class="navbar-list">
             <li>Inicio</li>
@@ -20,9 +22,15 @@
             <li>Formulario de contacto</li>
         </ul>
     </nav>
+
+     <!-- Bloque para la imagen del header -->
+
     <header>
         <img src="/multimedia/images/ola-mobile.jpeg" alt="wallpaper para el header">
     </header>
+
+     <!-- Bloque para el slide de proyectos -->
+
     <section class="projects">
         <h1>Mis proyectos</h1>
         <div class="carousel-images">
@@ -46,5 +54,45 @@
             <a class="carousel-dot" href="#project4"></a>
         </div>
     </section>
+
+     <!-- Bloque para el formulario -->
+
+     <form id="form" action="">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre">
+        </div>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Introduzca su apellido">
+        </div>
+        <div>
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="tel" placeholder="Introduzca numero de telefono">
+        </div>
+        <fieldset id="conocimineto">
+            <legend>Como me conociste?</legend>
+
+            <input type="radio" id="universidad" name="knoledge">
+            <label for="universidad">Universidad</label>
+
+            <input type="radio" id="kc" name="knoledge">
+            <label for="kc">Keepcoding kick-off</label>
+
+            <input type="radio" id="colegio" name="knoledge">
+            <label for="colegio">Colegio</label>
+
+            <input type="radio" id="github" name="knoledge">
+            <label for="github">En Github</label>
+            
+        </fieldset>
+        <div>
+            <label for="git">Github</label>
+            <input type="text" id="git" name="git" placeholder="Introduzca numero de telefono">
+        </div>
+        <div>
+            <input type="sumbmit" value="Enviar">
+        </div>
+     </form>
 </body>
 </html>
