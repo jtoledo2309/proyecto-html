@@ -11,6 +11,7 @@
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 
@@ -18,10 +19,12 @@ body {
 
 .navbar {
     background-color: var(--main-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 80%;
     color: var(--fonts-color);
+    width: 100%;
+    height: 80px;
 }
 
 .navbar-logo{
@@ -33,14 +36,16 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: end;
+    list-style: none;
+    margin-top: 1rem;
 }
 
-.navbar-links li {
-    list-style: none;
+.navbar-links li {   
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0.5rem;
+    padding: 0;
     border: red solid 1px;
 }
 
@@ -51,14 +56,16 @@ body {
 .navbar-links li a {
     text-decoration: none;
     padding: 1em;
-
-    border: darkmagenta solid 3px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
 }
 
 .burger-menu {
     position: absolute;
-    top: 0.5rem;
-    right: 1.5rem;
+    top: 3rem;
+    right: 2rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -84,14 +91,6 @@ header > img {
     width: 100%;
     position: relative;
     z-index: 1;
-}
-
-header .bienvenida{
-    color: var(--fonts-color);
-    z-index: 2;
-    position: absolute;
-    margin: 2em;
-    padding: 1em;
 }
 
 /* Carrusel de proyectos */
@@ -167,20 +166,21 @@ form div {
     margin: 1rem;
 }
 
-.footer {
+/* Footer */
 
+.footer {
     background-color: var(--main-color);
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: auto;
 }
 
 .footer a{
-    max-width: 30px;
+    color: var(--fonts-color);
 }
-
 
 
 

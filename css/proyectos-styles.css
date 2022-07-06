@@ -1,0 +1,28 @@
+.my-projects {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.unique-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px;
+}
+
+.unique-p img{
+    max-width: 100%;
+    border: 3px solid var(--fonts-color);
+
+}
+
+
+@media (max-width=370px){
+    .my-projects{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+} 
