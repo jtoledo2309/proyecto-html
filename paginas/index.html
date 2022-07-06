@@ -11,27 +11,36 @@
 <body>
     <!-- Bloque para el navbar -->
 
-    <nav class="navbar">
-        <div clas="navbar-logo">
-            Hola
+    <nav class="navbar" id="navbar">
+        <div class="navbar-logo">
+            Juan Toledo
         </div>
-        <ul class="navbar-list">
-            <li>Inicio</li>
-            <li>Proyectos</li>
-            <li>Skills</li>
-            <li>Formulario de contacto</li>
-        </ul>
+        <a href="#" class="burger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#navbar"> Inicio </a></li>
+                <li><a href="#projects"></a>Proyectos</a></li>
+                <li><a href="#skills"></a>Skills</a></li>
+                <li><a href="#form"></a>Formulario de contacto</a></li>
+            </ul>
+        </div>
     </nav>
 
      <!-- Bloque para la imagen del header -->
 
     <header>
-        <img src="/multimedia/images/ola-mobile.jpeg" alt="wallpaper para el header">
+        <p class="bienvenida">Bienvenido a mi portfolio, soy Juan Toledo y estoy iniciandome en el mundo del desarrollo</p>
+        <img src="/multimedia/images/header-space.jpeg">
+
     </header>
 
      <!-- Bloque para el slide de proyectos -->
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <h1>Mis proyectos</h1>
         <div class="carousel-images">
             <div id="project1">
@@ -55,44 +64,106 @@
         </div>
     </section>
 
+
+    <!-- Skills-->
+    <section class="skills">
+        <h1>Skills</h1>
+
+        <div class="progress-grid">
+            <div>HTML
+                <div class="progress-bar html">
+                    <span></span>
+                </div>
+            </div>
+
+            <div>JS
+                <div class="progress-bar JS">
+                    <span></span>
+                </div>
+            </div>
+
+            <div>Python
+                <div class="progress-bar Python">
+                    <span></span>
+                </div>
+            </div>
+
+            <div>C#
+                <div class="progress-bar C#">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
      <!-- Bloque para el formulario -->
 
      <form id="form" action="">
+
+        <h1>Formulario de contacto</h1>
+
         <div>
             <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre">
+            <input required type="text" id="nombre" name="nombre" placeholder="Nombre">
         </div>
+
         <div>
             <label for="apellido">Apellido</label>
-            <input type="text" id="apellido" name="apellido" placeholder="Introduzca su apellido">
+            <input required type="text" id="apellido" name="apellido" placeholder="Apellido">
         </div>
+
         <div>
             <label for="telefono">Telefono</label>
-            <input type="tel" id="telefono" name="tel" placeholder="Introduzca numero de telefono">
+            <input required type="tel" id="telefono" name="tel" placeholder="Telefono" pattern="[0-9]+">
         </div>
-        <fieldset id="conocimineto">
+
+        <fieldset required class="conocimineto">
             <legend>Como me conociste?</legend>
 
-            <input type="radio" id="universidad" name="knoledge">
-            <label for="universidad">Universidad</label>
+            <div>
+                <input type="radio" id="universidad" name="knoledge" checked>
+                <label for="universidad">Universidad</label>
+            </div>
 
-            <input type="radio" id="kc" name="knoledge">
-            <label for="kc">Keepcoding kick-off</label>
+            <div>
+                <input type="radio" id="kc" name="knoledge">
+                <label for="kc">Keepcoding kick-off</label>
+             </div>
 
-            <input type="radio" id="colegio" name="knoledge">
-            <label for="colegio">Colegio</label>
+            <div>
+                <input type="radio" id="colegio" name="knoledge">
+                <label for="colegio">Colegio</label>
+            </div>
 
-            <input type="radio" id="github" name="knoledge">
-            <label for="github">En Github</label>
-            
+            <div>
+                <input type="radio" id="github" name="knoledge">
+                <label for="github">En Github</label>
+            </div>
         </fieldset>
+
         <div>
             <label for="git">Github</label>
-            <input type="text" id="git" name="git" placeholder="Introduzca numero de telefono">
+            <input type="text" id="git" name="git" placeholder="Usuario Github" title="@usuario" pattern="^@[^\s]+">
         </div>
+
         <div>
-            <input type="sumbmit" value="Enviar">
+            <label for="descripcion">Descripción</label>
+            <textarea required type="text" id="descripcion" name="desc" rows="7" cols="40" maxlength="180" placeholder="Habla sobre ti"></textarea>
+        </div>
+
+
+        <div>
+            <button type="submit">Enviar</button>
         </div>
      </form>
+
+    <!-- Bloque para el footer-->
+
+    <footer class="footer">
+
+        <a class="link" href="https://twitter.com/juanitomaka" rel="noopener noreferrer">Twitter</a>
+        <a class="link" href="https://github.com/jtoledo2309" rel="noopener noreferrer">Github</a>
+        <a class="link" href="https://www.instagram.com/juanitomaka/" rel="noopener noreferrer">Instagram</a>
+    </footer>
+
 </body>
 </html>
