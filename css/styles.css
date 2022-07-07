@@ -27,9 +27,11 @@ body {
     height: 80px;
 }
 
-.navbar-logo{
+.navbar-logo img{
     font-size: 1.5rem;
     margin: 0.5rem;
+    width: 100%;
+    height: 100%;
 }
 
 .navbar-links ul{
@@ -46,7 +48,6 @@ body {
     align-items: center;
     flex-wrap: wrap;
     padding: 0;
-    border: red solid 1px;
 }
 
 .navbar-links li:hover{
@@ -60,6 +61,7 @@ body {
     height: 100%;
     display: block;
     box-sizing: border-box;
+    color: var(--fonts-color);
 }
 
 .burger-menu {
@@ -87,7 +89,7 @@ header{
     position: relative;
 }
 
-header > img {
+picture img{
     width: 100%;
     position: relative;
     z-index: 1;
@@ -124,6 +126,7 @@ header > img {
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 100%;
 }
 
 .carousel-images > div {
@@ -133,19 +136,24 @@ header > img {
     color: white;
 }
 
+.projects p > a{
+    text-decoration: none;
+    color: var(--fonts-color);
+    text-decoration:overline underline;
+}
 
 /* Skills */
 
 .progress-grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .progress-bar {
     background-color: var(--sencodary-color);
     height: 1rem;
-    width: 10rem;
-    margin: 10px 0;
+    width: 8rem;
+    margin: 5px 5px;
     padding: 0.5rem;
     border-radius: 15px;
 }
@@ -204,13 +212,30 @@ form div {
         display: flex;
     }
 
-    .navbar-links {
-        display: none;
-        width: 100%;
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        /align-items: flex-start;
     }
 
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+    .navbar-logo img{
+        width: 7vh;
+        height: 7vh;
+    }
+    
+    .navbar-links {
+       width: 100%;
+       border: solid red 3px;
+       z-index: 3;
+       background-color: var(--main-color);
+       padding: 0;
+       margin: 0;
+       height: 4rem;
+       opacity: 70%;
+    }
+
+    .navbar-links li{
+        display:flex;
+        flex-wrap: wrap;
     }
 }
