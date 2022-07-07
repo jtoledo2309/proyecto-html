@@ -97,9 +97,10 @@
     </section>
      <!-- Bloque para el formulario -->
 
-     <form id="form" action="#">
 
-        <h1>Formulario de contacto</h1>
+     <h1>Formulario de contacto</h1>
+
+     <form id="form" action="#">
 
         <div>
             <label for="nombre">Nombre</label>
@@ -116,33 +117,33 @@
             <input required type="tel" id="telefono" name="tel" placeholder="Telefono" pattern="[0-9]+">
         </div>
 
-        <fieldset required class="conocimineto">
-            <legend>Como me conociste?</legend>
+            <fieldset required class="conocimineto">
+                <legend>Como me conociste?</legend>
 
-            <div>
-                <input type="radio" id="universidad" name="knoledge" checked>
-                <label for="universidad">Universidad</label>
-            </div>
+                <div>
+                    <input type="radio" id="universidad" name="knoledge" checked>
+                    <label for="universidad">Universidad</label>
+                </div>
 
-            <div>
-                <input type="radio" id="kc" name="knoledge">
-                <label for="kc">Keepcoding kick-off</label>
-             </div>
+                <div>
+                    <input type="radio" id="kc" name="knoledge">
+                    <label for="kc">Keepcoding kick-off</label>
+                </div>
 
-            <div>
-                <input type="radio" id="colegio" name="knoledge">
-                <label for="colegio">Colegio</label>
-            </div>
+                <div>
+                    <input type="radio" id="colegio" name="knoledge">
+                    <label for="colegio">Colegio</label>
+                </div>
 
-            <div>
-                <input type="radio" id="github" name="knoledge">
-                <label for="github">En Github</label>
-            </div>
-        </fieldset>
+                <div>
+                    <input type="radio" id="github" name="knoledge">
+                    <label for="github">En Github</label>
+                </div>
+            </fieldset>
 
         <div>
             <label for="git">Github</label>
-            <input type="text" id="git" name="git" placeholder="Usuario Github" title="@usuario" pattern="^@[^\s]+">
+            <input type="text" class="github" id="git" name="git" placeholder="Usuario Github" title="@usuario" pattern="^@[^\s]+">
         </div>
 
         <div>
