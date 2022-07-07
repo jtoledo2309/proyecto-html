@@ -155,7 +155,7 @@ header > img {
     height: 100%;
     width: 70%;
     border-radius: 10px;
-    transition: widht 3s ease-in-out;
+    transition: width 3s ease-in-out;
     background-color: var(--fonts-color);
 }
 
@@ -164,6 +164,19 @@ header > img {
 
 form div {
     margin: 1rem;
+}
+
+/* Paginas de error */
+.link-to-error{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+}
+
+.link-to-error h2{
+    border: 3px solid var(--fonts-color);
+    width: fit-content;
+    padding: 1rem 3rem;
 }
 
 /* Footer */

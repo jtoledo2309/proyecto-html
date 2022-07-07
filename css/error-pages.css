@@ -1,0 +1,14 @@
+.error-block .return-home a{
+    text-decoration: none;
+    color: var(--fonts-color);
+}
+
+.un-error {
+    border: 3px solid var(--fonts-color);
+    width: 94vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

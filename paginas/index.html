@@ -32,11 +32,11 @@
 
      <!-- Bloque para la imagen del header -->
 
-    <header>
-        <img src="/multimedia/images/header-space.jpeg">
-
-    </header>
-
+    <picture>
+        <source media="(min-width: 900px)" srcset="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg">
+        <source media="(min-width: 500px)" srcset="https://i.pinimg.com/736x/56/20/1d/56201dbcdc03f97b210bc1fd8f5939ed.jpg">
+        <img src="/multimedia/images/header-space.jpeg" alt="space">
+    </picture>
      <!-- Bloque para el slide de proyectos -->
 
     <section class="projects" id="projects">
@@ -154,6 +154,18 @@
             <button type="submit">Enviar</button>
         </div>
      </form>
+
+    <!-- Bloque para las paginas de error -->
+
+    <h1>Links a páginas de error </h1>
+     <div class="link-to-error">
+        <div>
+            <h2><a href="/paginas/error-404.html">Pagina de error 404</a></h2>
+        </div>
+        <div>
+            <h2><a href="/paginas/error500.html">Pagina de error 500</a></h2>
+        </div>
+     </div>
 
     <!-- Bloque para el footer-->
 
