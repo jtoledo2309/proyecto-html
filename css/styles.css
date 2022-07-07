@@ -146,25 +146,75 @@ picture img{
 
 .progress-grid {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.progress-bar {
-    background-color: var(--sencodary-color);
-    height: 1rem;
+
+#caja-progreso {
     width: 8rem;
+    height: 1rem;
     margin: 5px 5px;
     padding: 0.5rem;
     border-radius: 15px;
+    border: 3px solid var(--sencodary-color);
 }
 
-.progress-bar span {
-    display: inline-block;
-    height: 100%;
+#barra {
     width: 70%;
-    border-radius: 10px;
-    transition: width 3s ease-in-out;
-    background-color: var(--fonts-color);
+    height: 100%;
+    background: var(--fonts-color);
+    border-radius: 15px;
+}
+
+@keyframes progreso-html {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes progreso-js {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 25%;
+    }
+}
+
+@keyframes progreso-python {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes progreso-c {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+.html#barra{
+    animation: progreso-html 5s linear forwards;
+}
+.js#barra {
+    animation: progreso-js 5s linear forwards;
+}
+.python#barra{
+    animation: progreso-python 5s forwards;
+}
+.c#barra{
+    animation: progreso-c 5s forwards;
 }
 
 
@@ -215,7 +265,7 @@ form div {
     .navbar {
         display: flex;
         flex-direction: column;
-        /align-items: flex-start;
+        align-items: flex-start;
     }
 
     .navbar-logo img{
