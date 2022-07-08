@@ -18,16 +18,23 @@
 
 }
 
-
-@media (min-width=370px){
-    .my-projects{
-        display: flex;
-        flex: column;
-    }
-} 
-
 .video-proyectos{
-    width: 100%;
+    width: 90%;
     height: 30vh;
-    margin-top: 3rem;
+    margin: 3rem auto;
+
 }
+
+@media (max-width:370px){
+    .my-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    }
+
+    .my-projects .unique-p{
+        border-top: solid 2px var(--fonts-color);
+    }
+
+} 

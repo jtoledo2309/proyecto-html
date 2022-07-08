@@ -326,6 +326,9 @@ form div {
 
     .navbar-links ul{
         margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     .navbar-links li{
@@ -333,6 +336,7 @@ form div {
         flex-wrap: wrap;
         background-color: var(--sencodary-color);
         border: solid 1px var(--fonts-color);
+        width: 30%;
     }
 }
 
