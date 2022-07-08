@@ -19,10 +19,10 @@
 }
 
 
-@media (max-width=370px){
+@media (min-width=370px){
     .my-projects{
         display: flex;
-        flex-wrap: wrap;
+        flex: column;
     }
 } 
 

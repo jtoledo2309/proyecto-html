@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -137,8 +138,6 @@ picture img{
 .carousel-images > div {
     width: 100%;
     height: 100%;
-    background-color: darkslategrey;
-    color: white;
 }
 
 .projects p > a{
@@ -233,6 +232,29 @@ form div {
     margin: 1rem;
 }
 
+#form input{
+    padding: 0.5rem;
+    border: 2px solid #555;
+    color: var(--sencodary-color)
+}
+
+#form input:focus {
+    background-color: var(--fonts-color);
+}
+
+#form textarea{
+    width: 50%;
+    height: 80px;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border: 2px solid #555;
+    color: var(--sencodary-color);
+}
+
+#form textarea:focus {
+    background-color: var(--fonts-color);
+}
+
 #form{
     display: flex;
     flex-direction: column;
@@ -258,6 +280,7 @@ form div {
 .footer {
     background-color: var(--main-color);
     width: 100%;
+    padding: 1rem 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -268,9 +291,6 @@ form div {
 .footer a{
     color: var(--fonts-color);
 }
-
-
-
 
 
 
@@ -373,5 +393,10 @@ form div {
 
     #form button{
         grid-area: 3 / 1 / 4 / 2;
+    }
+
+    #form textarea{
+        width: 100%;
+        height: 70%;
     }
 }
