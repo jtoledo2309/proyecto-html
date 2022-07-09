@@ -37,12 +37,13 @@
     </nav>
 
      <!-- Bloque para la imagen del header -->
-
-    <picture>
-        <source media="(min-width: 900px)" srcset="https://data4.origin.com/asset/content/dam/originx/web/app/games/star-wars/star-wars-battlefront-2/celebration-edition/SWBF2_Celebration_Edition_pdp_prefeature_FeatureName_en_ww_v1.jpg/6ee2bf6c-c2d6-4dd7-a211-e84b67b4062f/original.jpg">
-        <source media="(min-width: 500px)" srcset="https://p4.wallpaperbetter.com/wallpaper/293/596/885/star-wars-multiple-display-dual-monitors-monochrome-stormtrooper-wallpaper-thumb.jpg">
-        <img src="/multimedia/images/header-sw-mobile.jpeg" alt="space">
-    </picture>
+    <section class="header-image-section">
+        <picture class="header-images">
+            <source media="(min-width: 900px)" height=500px srcset="https://data4.origin.com/asset/content/dam/originx/web/app/games/star-wars/star-wars-battlefront-2/celebration-edition/SWBF2_Celebration_Edition_pdp_prefeature_FeatureName_en_ww_v1.jpg/6ee2bf6c-c2d6-4dd7-a211-e84b67b4062f/original.jpg">
+            <source media="(min-width: 500px)" srcset="https://p4.wallpaperbetter.com/wallpaper/293/596/885/star-wars-multiple-display-dual-monitors-monochrome-stormtrooper-wallpaper-thumb.jpg">
+            <img src="/multimedia/images/header-sw-mobile.jpeg" alt="space">
+        </picture>
+    </section>
      <!-- Bloque para el slide de proyectos -->
 
     <section class="projects" id="projects">
@@ -164,17 +165,17 @@
      </form>
 
     <!-- Bloque para las paginas de error -->
-
-    <h1 class="section-tittle">Links a páginas de error </h1>
-     <div class="link-to-error">
-        <div>
-            <h2><a href="/paginas/error-404.html">Pagina de error 404</a></h2>
+    <section class="error-pages-section">
+        <h1 class="section-tittle">Links a páginas de error </h1>
+        <div class="link-to-error">
+            <div>
+                <h2><a href="/paginas/error-404.html">Página de error 404</a></h2>
+            </div>
+            <div>
+                <h2><a href="/paginas/error500.html">Página de error 500</a></h2>
+            </div>
         </div>
-        <div>
-            <h2><a href="/paginas/error500.html">Pagina de error 500</a></h2>
-        </div>
-     </div>
-
+    </section>
     <!-- Bloque para el footer-->
 
     <footer class="footer">

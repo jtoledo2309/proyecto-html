@@ -3,6 +3,10 @@
     color: var(--fonts-color);
 }
 
+.error-block{
+    margin: 1rem;
+}
+
 .un-error {
     border: 3px solid var(--fonts-color);
     width: 70vw;
