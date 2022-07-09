@@ -78,25 +78,25 @@
         <h1>Skills</h1>
 
         <div class="progress-grid">
-            <div>HTML
+            <div class="name-tech">HTML
                 <div id="caja-progreso">
                     <div class="html" id="barra"></div>
                 </div>
             </div>
 
-            <div>JS
+            <div class="name-tech">JS
                 <div id="caja-progreso">
                     <div class="js" id="barra"></div>
                 </div>
             </div>
 
-            <div>Python
+            <div class="name-tech">Python
                 <div id="caja-progreso">
                     <div class="python"id="barra"></div>
                 </div>
             </div>
 
-            <div>C#
+            <div class="name-tech">C#
                 <div id="caja-progreso">
                     <div class="c"id="barra"></div>
                 </div>
@@ -129,7 +129,8 @@
             <input type="text" class="github" id="git" name="git" placeholder="Usuario Github" title="@usuario" pattern="^@[^\s]+">
         </div>
 
-            <fieldset required class="conocimineto">
+        <div class="conocimiento">
+            <fieldset required>
                 <legend>Como me conociste?</legend>
 
                 <div>
@@ -152,15 +153,15 @@
                     <label for="github">En Github</label>
                 </div>
             </fieldset>
-
+        </div>
         <div>
             <label for="descripcion">Descripción</label>
             <textarea required type="text" id="descripcion" name="desc" class="description-area" maxlength="180" placeholder="Habla sobre ti"></textarea>
         </div>
 
 
-        <div>
-            <button class="boton" type="submit">Enviar</button>
+        <div class="boton">
+            <button type="submit">Enviar</button>
         </div>
      </form>
 

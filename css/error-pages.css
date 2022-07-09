@@ -5,8 +5,10 @@
 
 .un-error {
     border: 3px solid var(--fonts-color);
-    width: 94vw;
+    width: 70vw;
     height: 50vh;
+    margin: auto;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
