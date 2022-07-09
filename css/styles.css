@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif, 'Roboto';
 }
 
 
@@ -98,6 +98,10 @@ picture img{
 
 /* Carrusel de proyectos */
 
+.section-tittle{
+    padding: 1rem;
+}
+
 .projects{
     margin: 1rem 0;
 }
@@ -141,10 +145,14 @@ picture img{
     height: 100%;
 }
 
+.projects p{
+    padding: 1rem;
+}
 .projects p > a{
     text-decoration: none;
     color: var(--fonts-color);
     text-decoration:overline underline;
+
 }
 
 /* Skills */
@@ -241,6 +249,7 @@ picture img{
     flex-direction: column;
     background-color: #0F202E;
     border: solid 1px var(--fonts-color);
+    margin: 0.5rem;
 }
 
 form div {
@@ -258,7 +267,7 @@ form div {
 }
 
 #form textarea{
-    width: 50%;
+    width: 100%;
     height: 80px;
     padding: 0.5rem;
     box-sizing: border-box;
@@ -285,12 +294,18 @@ form div {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
+    margin: 1rem;
 }
 
 .link-to-error h2{
     border: 3px solid var(--fonts-color);
     width: fit-content;
     padding: 1rem 3rem;
+}
+
+.link-to-error h2 a{
+    text-decoration: none;
+    color: var(--fonts-color);
 }
 
 /* Footer */
@@ -463,7 +478,7 @@ form div {
     }
 
     #form input[type=text]{
-        width: 100%;
+        width: 95%;
     }
 
     #form input[type=tel]{
